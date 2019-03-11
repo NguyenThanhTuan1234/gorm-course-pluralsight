@@ -47,6 +47,7 @@ type User struct {
 	Username	string	`sql: "type:VARCHAR(15)"`
 	Firstname	string	`sql: "size:100"`
 	Lastname	string
+	Count		int		`gorm:"AUTO_INCREMENT"`
 }
 
 var users []User = []User{
