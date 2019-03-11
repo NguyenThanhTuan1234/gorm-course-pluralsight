@@ -16,8 +16,6 @@ func main() {
 
 	db.DropTable(&User{})
 
-	db.SingularTable(true)
-
 	db.CreateTable(&User{})
 
 	for _, user := range users {
@@ -45,9 +43,9 @@ func main() {
 }
 
 type User struct {
-	ID			uint
-	Username	string
-	Firstname	string
+	gorm.Model
+	Username	string	`sql: "type:VARCHAR(15)"`
+	Firstname	string	`sql: "size:100"`
 	Lastname	string
 }
 
