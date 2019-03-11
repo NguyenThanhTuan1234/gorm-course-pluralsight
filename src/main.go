@@ -15,6 +15,9 @@ func main() {
 
 
 	db.DropTable(&User{})
+
+	db.SingularTable(true)
+
 	db.CreateTable(&User{})
 
 	for _, user := range users {
@@ -53,4 +56,8 @@ var users []User = []User{
 	User{Username:"fprefect", Firstname: "Ford", Lastname: "Prefect"},
 	User{Username:"tmacmillan", Firstname: "Tricia", Lastname: "Macmillan"},
 	User{Username:"mrobot", Firstname:"Marvin", Lastname:"Robot"},
+}
+
+func (u User) TableName() string {
+	return "stakeholders"
 }
