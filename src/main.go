@@ -11,52 +11,39 @@ func main() {
 	if err != nil {
 		panic(err.Error())
 	}
-	defer db.Close()
-
+	//defer db.Close()
 
 	db.DropTable(&User{})
-
 	db.CreateTable(&User{})
+	db.DropTable(&Calendar{})
+	db.CreateTable(&Calendar{})
 
-	for _, user := range users {
-		db.Create(&user)
-	}
+	db.Debug().Save(&User{
+		Username: "adent",
+		Calendar: Calendar{
+			Name: "Improbable Events",
+		},
+	})
 
-	//u := User{Username: "tmacmillan"}
-	//db.Where(&u).First(&u)
-	//fmt.Println(u)
-	//
-	//u.Lastname = "Beeblebrox"
-	//db.Save(&u)
-	//
-	//user := User{}
-	//db.Where(&u).First(&user)
-	//fmt.Println(user)
+	u := User{}
+	c := Calendar{}
+	db.Find(&u).Related(&c, "calendar")
+	fmt.Println(u)
+	fmt.Println()
+	fmt.Println(c)
 
-	db.Where(&User{Username: "adent"}).Delete(&User{})
-	fmt.Println("done")
-
-	//u := User{}
-	//db.Last(&u)
-	//
-	//fmt.Println(u)
 }
 
 type User struct {
 	gorm.Model
-	Username	string	`sql: "type:VARCHAR(15)"`
-	Firstname	string	`sql: "size:100"`
-	Lastname	string
-	Count		int		`gorm:"AUTO_INCREMENT"`
+	Username	string
+	FirstName	string
+	LastName	string
+	Calendar	Calendar
 }
 
-var users []User = []User{
-	User{Username:"adent", Firstname: "Arthur", Lastname:"Dent"},
-	User{Username:"fprefect", Firstname: "Ford", Lastname: "Prefect"},
-	User{Username:"tmacmillan", Firstname: "Tricia", Lastname: "Macmillan"},
-	User{Username:"mrobot", Firstname:"Marvin", Lastname:"Robot"},
-}
-
-func (u User) TableName() string {
-	return "stakeholders"
+type Calendar struct {
+	gorm.Model
+	Name	string
+	UserID	uint
 }
