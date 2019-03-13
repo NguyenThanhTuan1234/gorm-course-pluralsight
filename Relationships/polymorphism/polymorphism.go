@@ -1,10 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"github.com/jinzhu/gorm"
-	_ "github.com/lib/pq"
-	"time"
+"github.com/jinzhu/gorm"
+_ "github.com/lib/pq"
+"time"
 )
 
 func main() {
@@ -21,29 +20,28 @@ func main() {
 	db.DropTable(&Appointment{})
 	db.CreateTable(&Appointment{})
 
-	//db.Debug().Model(&Calendar{}).
-	//	AddForeignKey("user_id", "users(id)", "CASCADE", "CASCADE") //Association between user and calendar will be deleted when delete a user
+	users := []User{
+		{Username: "fprefect"},
+		{Username: "tmacmillan"},
+		{Username: "mrobot"},
+	}
+
+	for i := range users {
+		db.Save(&users[i])
+	}
 
 	db.Debug().Save(&User{
 		Username: "adent",
 		Calendar: Calendar{
 			Name: "Improbable Events",
 			Appointments: []Appointment{
-				{Subject: "Spontaneous Whale Generation"},
-				{Subject: "Saved from Vaccuum of Space"},
+				{Subject: "Spontaneous Whale Generation", Attendees: users},
+				{Subject: "Saved from Vaccuum of Space", Attendees: users},
 			},
 		},
 	})
 
-	//u := User{}
-	c := Calendar{}
-	a := Appointment{}
 
-
-	db.Model(&c).Related(&a, "Appointments")
-	db.Preload("Appointments").Find(&c)
-	fmt.Println(c)
-	fmt.Println(a)
 
 }
 
@@ -59,7 +57,7 @@ type Calendar struct {
 	gorm.Model
 	Name	string
 	UserID	uint
-	Appointments []Appointment
+	Appointments []Appointment `gorm:"polymorphic:owner"`
 }
 
 type Appointment struct {
@@ -68,5 +66,12 @@ type Appointment struct {
 	Description	string
 	StartTime	time.Time
 	Length		uint
-	CalendarID	uint
+	OwnerID		uint
+	OwnerType	string
+	Attendees	[]User `gorm:"many2many:appointment_user"`
+}
+
+type TaskList struct {
+	gorm.Model
+	Appointments []Appointment `gorm:"polymorphic:owner"`
 }
