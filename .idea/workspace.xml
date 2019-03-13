@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082af9cb-2184-4287-97cd-9f1d369eff20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CRUD/batch-update/batch-update.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CRUD/deleting-record/delete.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Relationships/one-to-many/src/main/one-to-many.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+            <state relative-caret-position="17">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="10" selection-end-column="53" />
               <folding>
                 <element signature="e#14#88#0" expanded="true" />
               </folding>
@@ -46,17 +46,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CRUD/updating-record/update.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="25" lean-forward="true" selection-end-line="50" />
+            <state relative-caret-position="357">
+              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CRUD/batch-update/batch-update.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="27" column="6" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="27" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CRUD/batch-update/batch-update.go">
+        <entry file="file://$PROJECT_DIR$/CRUD/deleting-record/delete.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="30" column="98" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
+            <state relative-caret-position="464">
+              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+              <folding>
+                <element signature="e#14#73#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,6 +122,7 @@
         <option value="$PROJECT_DIR$/CRUD/creating-record/create.go" />
         <option value="$PROJECT_DIR$/CRUD/updating-record/update.go" />
         <option value="$PROJECT_DIR$/CRUD/batch-update/batch-update.go" />
+        <option value="$PROJECT_DIR$/CRUD/deleting-record/delete.go" />
       </list>
     </option>
   </component>
@@ -142,6 +155,12 @@
               <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
               <item name="CRUD" type="462c0819:PsiDirectoryNode" />
               <item name="batch-update" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
+              <item name="deleting-record" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
@@ -182,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build batch-update.go">
+  <component name="RunManager" selected="Go Build.go build delete.go">
     <configuration name="go build batch-update.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gorm-course-pluralsight" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -201,20 +220,20 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build delete.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gorm-course-pluralsight" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/CRUD/deleting-record/delete.go" />
+      <package value="gorm-course-pluralsight" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build one-to-many.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gorm-course-pluralsight" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/Relationships/one-to-many/src/main/one-to-many.go" />
-      <package value="gorm-course-pluralsight" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build polymorphism.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gorm-course-pluralsight" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/Relationships/polymorphism/polymorphism.go" />
       <package value="gorm-course-pluralsight" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -230,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build delete.go" />
         <item itemvalue="Go Build.go build batch-update.go" />
         <item itemvalue="Go Build.go build update.go" />
         <item itemvalue="Go Build.go build create.go" />
         <item itemvalue="Go Build.go build one-to-many.go" />
-        <item itemvalue="Go Build.go build polymorphism.go" />
       </list>
     </recent_temporary>
   </component>
@@ -300,16 +319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Relationships/one-to-many/src/main/one-to-many.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-          <folding>
-            <element signature="e#14#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CRUD/creating-record/create.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -317,17 +326,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRUD/updating-record/update.go">
+    <entry file="file://$PROJECT_DIR$/Relationships/one-to-many/src/main/one-to-many.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="25" lean-forward="true" selection-end-line="50" />
+        <state relative-caret-position="17">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="10" selection-end-column="53" />
+          <folding>
+            <element signature="e#14#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CRUD/batch-update/batch-update.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="98" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
+        <state relative-caret-position="357">
+          <caret line="27" column="6" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="27" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRUD/updating-record/update.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRUD/deleting-record/delete.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding>
+            <element signature="e#14#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
