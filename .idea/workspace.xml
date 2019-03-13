@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082af9cb-2184-4287-97cd-9f1d369eff20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Relationships/one-to-many/src/main/one-to-many.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Relationships/many-to-many/many-to-many.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Relationships/one-to-one/src/main/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,20 +18,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="1" />
-              <folding>
-                <element signature="e#14#80#0" expanded="true" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Relationships/one-to-many/src/main/one-to-many.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Relationships/one-to-many/src/main/one-to-many.go">
+        <entry file="file://$PROJECT_DIR$/Relationships/many-to-many/many-to-many.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+            <state relative-caret-position="1003">
+              <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
               <folding>
-                <element signature="e#11#68#0" expanded="true" />
+                <element signature="e#22#89#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,14 +63,15 @@
         <option value="$PROJECT_DIR$/Relationships/src/main/main.go" />
         <option value="$PROJECT_DIR$/Relationships/one-to-one/src/main/main.go" />
         <option value="$PROJECT_DIR$/Relationships/one-to-many/src/main/one-to-many.go" />
+        <option value="$PROJECT_DIR$/Relationships/many-to-many/many-to-many.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2723" />
+    <option name="x" value="2431" />
     <option name="y" value="-11" />
-    <option name="width" value="253" />
-    <option name="height" value="135" />
+    <option name="width" value="198" />
+    <option name="height" value="90" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -73,7 +79,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -90,12 +95,13 @@
               <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
               <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
               <item name="Relationships" type="462c0819:PsiDirectoryNode" />
-              <item name="one-to-many" type="462c0819:PsiDirectoryNode" />
+              <item name="many-to-many" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -125,7 +131,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build one-to-many.go">
+  <component name="RunManager" selected="Go Build.go build many-to-many.go">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gorm-course-pluralsight" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -153,6 +159,15 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build many-to-many.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gorm-course-pluralsight" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Relationships/many-to-many/many-to-many.go" />
+      <package value="gorm-course-pluralsight" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build one-to-many.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gorm-course-pluralsight" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -164,6 +179,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build many-to-many.go" />
         <item itemvalue="Go Build.go build one-to-many.go" />
         <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go (1)" />
@@ -175,7 +191,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17537314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17697228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -200,28 +216,32 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Relationships/one-to-one/src/main/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../gorm/src/main/main.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../gorm-getstarted/src/main/main.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Relationships/one-to-one/src/main/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Relationships/one-to-many/src/main/one-to-many.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+        <state relative-caret-position="1122">
+          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Relationships/many-to-many/many-to-many.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
           <folding>
-            <element signature="e#11#68#0" expanded="true" />
+            <element signature="e#22#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
