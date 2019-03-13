@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082af9cb-2184-4287-97cd-9f1d369eff20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CRUD/deleting-record/delete.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CRUD/transaction/transactions.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/CRUD/updating-record/update.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -56,16 +56,28 @@
         <entry file="file://$PROJECT_DIR$/CRUD/batch-update/batch-update.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="27" column="6" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="27" selection-end-column="6" />
+              <caret line="27" column="6" selection-start-line="17" selection-start-column="4" selection-end-line="27" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CRUD/deleting-record/delete.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="6" selection-end-line="44" />
+              <folding>
+                <element signature="e#14#73#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CRUD/deleting-record/delete.go">
+        <entry file="file://$PROJECT_DIR$/CRUD/transaction/transactions.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+            <state relative-caret-position="323">
+              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding>
                 <element signature="e#14#73#0" expanded="true" />
               </folding>
@@ -123,6 +135,7 @@
         <option value="$PROJECT_DIR$/CRUD/updating-record/update.go" />
         <option value="$PROJECT_DIR$/CRUD/batch-update/batch-update.go" />
         <option value="$PROJECT_DIR$/CRUD/deleting-record/delete.go" />
+        <option value="$PROJECT_DIR$/CRUD/transaction/transactions.go" />
       </list>
     </option>
   </component>
@@ -154,13 +167,7 @@
               <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
               <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
               <item name="CRUD" type="462c0819:PsiDirectoryNode" />
-              <item name="batch-update" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
-              <item name="deleting-record" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
@@ -201,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build delete.go">
+  <component name="RunManager" selected="Go Build.go build transactions.go">
     <configuration name="go build batch-update.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gorm-course-pluralsight" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -229,11 +236,11 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build one-to-many.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build transactions.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gorm-course-pluralsight" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/Relationships/one-to-many/src/main/one-to-many.go" />
+      <filePath value="$PROJECT_DIR$/CRUD/transaction/transactions.go" />
       <package value="gorm-course-pluralsight" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -249,11 +256,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build transactions.go" />
         <item itemvalue="Go Build.go build delete.go" />
         <item itemvalue="Go Build.go build batch-update.go" />
         <item itemvalue="Go Build.go build update.go" />
         <item itemvalue="Go Build.go build create.go" />
-        <item itemvalue="Go Build.go build one-to-many.go" />
       </list>
     </recent_temporary>
   </component>
@@ -339,21 +346,31 @@
     <entry file="file://$PROJECT_DIR$/CRUD/batch-update/batch-update.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="27" selection-end-column="6" />
+          <caret line="27" column="6" selection-start-line="17" selection-start-column="4" selection-end-line="27" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CRUD/updating-record/update.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CRUD/deleting-record/delete.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        <state relative-caret-position="425">
+          <caret line="25" column="6" selection-end-line="44" />
+          <folding>
+            <element signature="e#14#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRUD/transaction/transactions.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="e#14#73#0" expanded="true" />
           </folding>
