@@ -104,7 +104,21 @@ func main() {
 	//	fmt.Printf("\n%v\n", u)
 	//}
 
-
+	//**************************Where Clauses****************************************
+	users := []User {}
+	//db.Debug().Where("user_name = ?", "adent").Find(&users)
+	//db.Debug().Where(&User{UserName: "adent"}).Find(&users)
+	//db.Debug().Where(map[string]interface{}{"user_name":"adent"}).Find(&users)
+	//db.Debug().Where("user_name in (?)", []string{"adent", "tmacmillan"}).Find(&users)
+	//db.Debug().Where("user_name like ?", "%mac%" ).Find(&users)
+	//db.Debug().Where("user_name like ? and first_name = ? ", "%mac%", "Tricia" ).Find(&users)
+	//db.Debug().Where("created_at < ?", time.Now()).Find(&users)
+	//db.Debug().Where("created_at BETWEEN ? and ?", time.Now().Add(-30*24*time.Hour), time.Now()).Find(&users)
+	//db.Debug().Not("user_name = ?", "adent").Find(&users)
+	db.Debug().Where("user_name = ?", "adent").Or("user_name = ?" , "fprefect").Find(&users)
+	for _, u := range users {
+		fmt.Printf("\n%v\n", u)
+	}
 }
 
 

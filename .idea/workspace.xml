@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082af9cb-2184-4287-97cd-9f1d369eff20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go" beforeDir="false" afterPath="$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+            <state relative-caret-position="272">
+              <caret line="117" column="91" selection-start-line="117" selection-start-column="91" selection-end-line="117" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -376,8 +375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="117" column="91" selection-start-line="117" selection-start-column="91" selection-end-line="117" selection-end-column="91" />
         </state>
       </provider>
     </entry>
