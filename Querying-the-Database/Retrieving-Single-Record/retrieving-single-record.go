@@ -13,79 +13,79 @@ func main() {
 		panic(err.Error())
 	}
 
-	//********************Create data***********************************//
+	//********************Create data***********************//
 
-	db.DropTable(&User{})
-	db.CreateTable(&User{})
-	db.DropTable(&Calendar{})
-	db.CreateTable(&Calendar{})
-	db.DropTable(&Appointment{})
-	db.CreateTable(&Appointment{})
+	//db.DropTable(&User{})
+	//db.CreateTable(&User{})
+	//db.DropTable(&Calendar{})
+	//db.CreateTable(&Calendar{})
+	//db.DropTable(&Appointment{})
+	//db.CreateTable(&Appointment{})
+	//
+	//users := map[string]*User{
+	//	"adent":		&User{UserName:"adent", FirstName: "Arthur", LastName:"Dent"},
+	//	"fprefect":		&User{UserName:"fprefect", FirstName: "Ford", LastName:"Prefect"},
+	//	"tmacmillan":	&User{UserName:"tmacmillan", FirstName: "Tricia", LastName:"Macmillan"},
+	//	"zbeeblebrox":	&User{UserName:"zbeeblebrox", FirstName: "Zaphod", LastName:"Beeblebrox"},
+	//	"mrobot":		&User{UserName:"mrobot", FirstName: "Marvin", LastName:"Robot"},
+	//}
+	//for _, user := range users {
+	//	user.Calendar = Calendar{Name: "Calendar"}
+	//}
+	//
+	//users["adent"].AddAppointment(&Appointment{
+	//	Subject:	"Save House",
+	//	StartTime:	parseTime("1979-07-02 08:00"),
+	//	Length:		60,
+	//})
+	//
+	//users["fprefect"].AddAppointment(&Appointment{
+	//	Subject:	"Get a Drink at Local Pub",
+	//	StartTime:	parseTime("1979-07-02 10:00"),
+	//	Length:		11,
+	//	Attendees: 	[]*User{users["adent"]},
+	//})
+	//
+	//users["fprefect"].AddAppointment(&Appointment{
+	//	Subject:	"Hitch a ride",
+	//	StartTime:	parseTime("1979-07-02 10:12"),
+	//	Length:		60,
+	//	Attendees: 	[]*User{users["adent"]},
+	//})
+	//
+	//users["fprefect"].AddAppointment(&Appointment{
+	//	Subject:	"Attend Poetry Reading",
+	//	StartTime:	parseTime("1979-07-02 11:00"),
+	//	Length:		30,
+	//	Attendees: 	[]*User{users["adent"]},
+	//})
+	//
+	//users["fprefect"].AddAppointment(&Appointment{
+	//	Subject:	"Get Thrown into Space",
+	//	StartTime:	parseTime("1979-07-02 10:40"),
+	//	Length:		5,
+	//	Attendees: 	[]*User{users["adent"]},
+	//})
+	//
+	//users["fprefect"].AddAppointment(&Appointment{
+	//	Subject:	"Get saved from Space",
+	//	StartTime:	parseTime("1979-07-02 11:45"),
+	//	Length:		1,
+	//	Attendees: 	[]*User{users["adent"]},
+	//})
+	//
+	//users["zbeeblebrox"].AddAppointment(&Appointment{
+	//	Subject:	"Explore Planet Builder's HomeWorld",
+	//	StartTime:	parseTime("1979-07-03 11:00"),
+	//	Length:		240,
+	//	Attendees: 	[]*User{users["adent"]},
+	//})
+	//
+	//for _, user := range users {
+	//	db.Save(&user)
+	//}
 
-	users := map[string]*User{
-		"adent":		&User{UserName:"adent", FirstName: "Arthur", LastName:"Dent"},
-		"fprefect":		&User{UserName:"fprefect", FirstName: "Ford", LastName:"Prefect"},
-		"tmacmillan":	&User{UserName:"tmacmillan", FirstName: "Tricia", LastName:"Macmillan"},
-		"zbeeblebrox":	&User{UserName:"zbeeblebrox", FirstName: "Zaphod", LastName:"Beeblebrox"},
-		"mrobot":		&User{UserName:"mrobot", FirstName: "Marvin", LastName:"Robot"},
-	}
-	for _, user := range users {
-		user.Calendar = Calendar{Name: "Calendar"}
-	}
-
-	users["adent"].AddAppointment(&Appointment{
-		Subject:	"Save House",
-		StartTime:	parseTime("1979-07-02 08:00"),
-		Length:		60,
-	})
-
-	users["fprefect"].AddAppointment(&Appointment{
-		Subject:	"Get a Drink at Local Pub",
-		StartTime:	parseTime("1979-07-02 10:00"),
-		Length:		11,
-		Attendees: 	[]*User{users["adent"]},
-	})
-
-	users["fprefect"].AddAppointment(&Appointment{
-		Subject:	"Hitch a ride",
-		StartTime:	parseTime("1979-07-02 10:12"),
-		Length:		60,
-		Attendees: 	[]*User{users["adent"]},
-	})
-
-	users["fprefect"].AddAppointment(&Appointment{
-		Subject:	"Attend Poetry Reading",
-		StartTime:	parseTime("1979-07-02 11:00"),
-		Length:		30,
-		Attendees: 	[]*User{users["adent"]},
-	})
-
-	users["fprefect"].AddAppointment(&Appointment{
-		Subject:	"Get Thrown into Space",
-		StartTime:	parseTime("1979-07-02 10:40"),
-		Length:		5,
-		Attendees: 	[]*User{users["adent"]},
-	})
-
-	users["fprefect"].AddAppointment(&Appointment{
-		Subject:	"Get saved from Space",
-		StartTime:	parseTime("1979-07-02 11:45"),
-		Length:		1,
-		Attendees: 	[]*User{users["adent"]},
-	})
-
-	users["zbeeblebrox"].AddAppointment(&Appointment{
-		Subject:	"Explore Planet Builder's HomeWorld",
-		StartTime:	parseTime("1979-07-03 11:00"),
-		Length:		240,
-		Attendees: 	[]*User{users["adent"]},
-	})
-
-	for _, user := range users {
-		db.Save(&user)
-	}
-
-	//*************************Retrieving Single Record*******************************
+	//*************************Retrieving Single Record******************************
 
 	//u := User{}
 	//db.Debug().First(&u)
@@ -93,16 +93,18 @@ func main() {
 	//db.Debug().FirstOrCreate(&u, &User{UserName:"lprosser"})
 	//db.Debug().Last(&u)
 
-	//*************************Retrieving Record Sets*********************************
+	//*************************Retrieving Record Sets********************************
 
-	user1 := []User{}
+	//user1 := []User{}
 	//db.Debug().Find(&users)
 	//db.Debug().Find(&user1, &User{UserName: "fprefect"})
-	//db.Debug().Find(&users, map[string]interface{}{"username":"fprefect"})
-	db.Debug().Find(&user1, "username = ?", "fprefect")
-	for _, u := range user1{
-		fmt.Printf("\n%v\n", u)
-	}
+	//db.Debug().Find(&users, map[string]interface{}{"user_name":"fprefect"})
+	//db.Debug().Find(&user1, "user_name = ?", "fprefect")
+	//for _, u := range user1{
+	//	fmt.Printf("\n%v\n", u)
+	//}
+
+
 }
 
 
