@@ -1,4 +1,4 @@
-package main
+package one_to_many
 
 import (
 	"fmt"
