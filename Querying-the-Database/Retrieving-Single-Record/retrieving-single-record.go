@@ -120,10 +120,20 @@ func main() {
 	//	fmt.Printf("\n%v\n", u)
 	//}
 
+	//***************************Preloading-Child-Objects******************************
+
+	//users := []User{}
+	//db.Debug().Preload("Calendar.Appointments").Find(&users)
+	//for _, u := range users {
+	//	fmt.Printf("\n%v\n", u.Calendar)
+	//}
+
+	//*****************************Limits-Offsets-Ordering******************************
 	users := []User{}
-	db.Debug().Preload("Calendar.Appointments").Find(&users)
+
+	db.Debug().Limit(2).Offset(2).Order("first_name ").Find(&users)
 	for _, u := range users {
-		fmt.Printf("\n%v\n", u.Calendar)
+		fmt.Printf("\n%v\n", u)
 	}
 }
 
