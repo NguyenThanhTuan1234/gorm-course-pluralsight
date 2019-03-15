@@ -129,14 +129,35 @@ func main() {
 	//}
 
 	//*****************************Limits-Offsets-Ordering******************************
-	users := []User{}
+	//users := []User{}
+	//
+	//db.Debug().Limit(2).Offset(2).Order("first_name ").Find(&users)
+	//for _, u := range users {
+	//	fmt.Printf("\n%v\n", u)
+	//}
 
-	db.Debug().Limit(2).Offset(2).Order("first_name ").Find(&users)
-	for _, u := range users {
+	//****************************Selecting data subsets*******************************
+	//users := []User{}
+
+	//db.Debug().Select([]string{"first_name", "last_name"}).Find(&users)
+	//
+	//db.Debug().Model(&User{}).Pluck("first_name", &usernames)
+	userVMs := []UserViewModel{}
+	db.Debug().Model(&User{}).Select([]string{"first_name", "last_name"}).Scan(&userVMs)
+
+	for _, u := range userVMs {
 		fmt.Printf("\n%v\n", u)
 	}
+
+	var count int
+	db.Debug().Model(&User{}).Count(&count)
+	fmt.Println(count)
 }
 
+type UserViewModel struct {
+	FirstName	string
+	LastName	string
+}
 
 func parseTime(timeRaw string) time.Time {
 	const timeLayout = "2006-01-02 15:04"
