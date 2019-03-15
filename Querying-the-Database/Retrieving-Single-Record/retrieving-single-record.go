@@ -142,16 +142,24 @@ func main() {
 	//db.Debug().Select([]string{"first_name", "last_name"}).Find(&users)
 	//
 	//db.Debug().Model(&User{}).Pluck("first_name", &usernames)
-	userVMs := []UserViewModel{}
-	db.Debug().Model(&User{}).Select([]string{"first_name", "last_name"}).Scan(&userVMs)
+	//userVMs := []UserViewModel{}
+	//db.Debug().Model(&User{}).Select([]string{"first_name", "last_name"}).Scan(&userVMs)
+	//
+	//for _, u := range userVMs {
+	//	fmt.Printf("\n%v\n", u)
+	//}
+	//
+	//var count int
+	//db.Debug().Model(&User{}).Count(&count)
+	//fmt.Println(count)
 
-	for _, u := range userVMs {
-		fmt.Printf("\n%v\n", u)
-	}
+	//********************Using Attrs and assign to provide default value *************
+	u := User{}
+	//db.Debug().Where("user_name = ?", "adent").Attrs(&User{FirstName: "Eddie"}).FirstOrInit(&u)
+	db.Debug().Where("user_name = ?", "adent").Assign(&User{FirstName: "Eddie"}).FirstOrInit(&u)
+	fmt.Printf("\n%v\n", u)
 
-	var count int
-	db.Debug().Model(&User{}).Count(&count)
-	fmt.Println(count)
+
 }
 
 type UserViewModel struct {
