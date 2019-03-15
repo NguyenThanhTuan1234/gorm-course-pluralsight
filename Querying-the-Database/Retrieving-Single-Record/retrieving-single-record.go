@@ -154,17 +154,25 @@ func main() {
 	//fmt.Println(count)
 
 	//********************Using Attrs and assign to provide default value *************
-	u := User{}
-	//db.Debug().Where("user_name = ?", "adent").Attrs(&User{FirstName: "Eddie"}).FirstOrInit(&u)
-	db.Debug().Where("user_name = ?", "adent").Assign(&User{FirstName: "Eddie"}).FirstOrInit(&u)
-	fmt.Printf("\n%v\n", u)
+	//u := User{}
+	////db.Debug().Where("user_name = ?", "adent").Attrs(&User{FirstName: "Eddie"}).FirstOrInit(&u)
+	//db.Debug().Where("user_name = ?", "adent").Assign(&User{FirstName: "Eddie"}).FirstOrInit(&u)
+	//fmt.Printf("\n%v\n", u)
 
+	//***********************Creating Projections with Joins****************************
+	usersVMS := []UserViewModel{}
+	db.Debug().Model(&User{}).Joins("inner join calendars on calendars.user_id = users.id").Select("users.first_name, users.last_name, calendars.name").Scan(&usersVMS)
+
+	for _, u := range usersVMS{
+		fmt.Printf("\n%v\n", u)
+	}
 
 }
 
 type UserViewModel struct {
 	FirstName	string
 	LastName	string
+	CalendarName string `gorm:"column:name"`
 }
 
 func parseTime(timeRaw string) time.Time {
