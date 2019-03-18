@@ -14,13 +14,15 @@ func main(){
 
 	//db.DropTableIfExists(&User{}, &Calendar{}, &Appointment{}, "appointment_user")
 	//db.CreateTable(&User{}, &Calendar{}, &Appointment{}, &Attachment{})
-	db.Debug().AutoMigrate(&User{}, &Calendar{}, &Appointment{}, &Attachment{})
+	db.AutoMigrate(&User{}, &Calendar{}, &Appointment{}, &Attachment{})
+	//db.Debug().Model(&User{}).ModifyColumn("first_name", "VARCHAR(100)")
+	db.Debug().Exec(`ALTER TABLE "users" ALTER "first_name" TYPE VARCHAR(100)`)
 }
 
 type User struct {
 	gorm.Model
 	UserName	string
-	FirstName	string
+	FirstName	string		`sql:"type:VARCHAR(100)"`
 	LastName	string
 	Calendar	Calendar
 }
