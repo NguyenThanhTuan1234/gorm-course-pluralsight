@@ -12,9 +12,9 @@ func main(){
 		panic(err.Error())
 	}
 
-	db.DropTableIfExists(&User{}, &Calendar{}, &Appointment{}, "appointment_user")
-	db.CreateTable(&User{}, &Calendar{}, &Appointment{}, &Attachment{})
-
+	//db.DropTableIfExists(&User{}, &Calendar{}, &Appointment{}, "appointment_user")
+	//db.CreateTable(&User{}, &Calendar{}, &Appointment{}, &Attachment{})
+	db.Debug().AutoMigrate(&User{}, &Calendar{}, &Appointment{}, &Attachment{})
 }
 
 type User struct {
@@ -28,23 +28,25 @@ type User struct {
 type Calendar struct {
 	gorm.Model
 	Name	string
-	UserID 	uint
+	UserID 	uint	`sql:"index:idx_calendar_user_id"`
 	Appointments []*Appointment
 }
 
 type Appointment struct {
 	gorm.Model
-	Subject		string
-	Description string
-	StartTime	time.Time
-	Length		uint
-	CalendarID	uint
-	Attendees	[]*User `gorm:"many2many:appointment_user"`
-	Attachments	[]Attachment
+	Subject				string
+	Description 		string
+	StartTime			time.Time
+	Length				uint
+	CalendarID			uint	`sql:"index:idx_appointment_calendar_id"`
+	Reccuring			bool
+	RecurrencePattern	string
+	Attendees			[]*User `gorm:"many2many:appointment_user"`
+	Attachments			[]Attachment
 }
 
 type Attachment struct {
 	gorm.Model
 	Data			[]byte
-	AppointmentID	uint
+	AppointmentID	uint	`sql:"index:idx_attachment_appointment_id"`
 }
