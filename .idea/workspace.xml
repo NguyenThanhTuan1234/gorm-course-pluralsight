@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082af9cb-2184-4287-97cd-9f1d369eff20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go" beforeDir="false" afterPath="$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modifying Schemas/creating-new-entities.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,19 +14,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Relationships/one-to-one/main.go">
+        <entry file="file://$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="577">
+              <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go">
+        <entry file="file://$PROJECT_DIR$/Modifying Schemas/creating-new-entities.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="181" column="39" selection-start-line="181" selection-start-column="39" selection-end-line="181" selection-end-column="39" />
+            <state relative-caret-position="391">
+              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+              <folding>
+                <element signature="e#14#64#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,6 +133,7 @@
         <option value="$PROJECT_DIR$/CRUD/transaction/transactions.go" />
         <option value="$PROJECT_DIR$/Relationships/one-to-one/main.go" />
         <option value="$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go" />
+        <option value="$PROJECT_DIR$/Modifying Schemas/creating-new-entities.go" />
       </list>
     </option>
   </component>
@@ -154,37 +159,7 @@
             <path>
               <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
               <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
-              <item name="batch-update" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
-              <item name="creating-record" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
-              <item name="deleting-record" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
-              <item name="updating-record" type="462c0819:PsiDirectoryNode" />
+              <item name="Modifying Schemas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
@@ -196,35 +171,6 @@
               <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
               <item name="Querying-the-Database" type="462c0819:PsiDirectoryNode" />
               <item name="Retrieving-Single-Record" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="Relationships" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="Relationships" type="462c0819:PsiDirectoryNode" />
-              <item name="many-to-many" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="Relationships" type="462c0819:PsiDirectoryNode" />
-              <item name="one-to-many" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="Relationships" type="462c0819:PsiDirectoryNode" />
-              <item name="one-to-one" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
-              <item name="Relationships" type="462c0819:PsiDirectoryNode" />
-              <item name="polymorphism" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
@@ -270,12 +216,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build retrieving-single-record.go">
+  <component name="RunManager" selected="Go Build.go build creating-new-entities.go">
     <configuration name="go build batch-update.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gorm-course-pluralsight" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/CRUD/batch-update/batch-update.go" />
+      <package value="gorm-course-pluralsight" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build creating-new-entities.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gorm-course-pluralsight" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Modifying Schemas/creating-new-entities.go" />
       <package value="gorm-course-pluralsight" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -307,22 +262,13 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build update.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gorm-course-pluralsight" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/CRUD/updating-record/update.go" />
-      <package value="gorm-course-pluralsight" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build creating-new-entities.go" />
         <item itemvalue="Go Build.go build retrieving-single-record.go" />
         <item itemvalue="Go Build.go build transactions.go" />
         <item itemvalue="Go Build.go build delete.go" />
         <item itemvalue="Go Build.go build batch-update.go" />
-        <item itemvalue="Go Build.go build update.go" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +281,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37053087" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37053087" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -343,7 +289,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.26760563" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.26760563" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -448,8 +394,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="181" column="39" selection-start-line="181" selection-start-column="39" selection-end-line="181" selection-end-column="39" />
+        <state relative-caret-position="577">
+          <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modifying Schemas/creating-new-entities.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="e#14#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
