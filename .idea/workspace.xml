@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082af9cb-2184-4287-97cd-9f1d369eff20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go" beforeDir="false" afterPath="$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="174" column="44" lean-forward="true" selection-start-line="174" selection-start-column="44" selection-end-line="174" selection-end-column="44" />
+            <state relative-caret-position="323">
+              <caret line="171" column="132" selection-start-line="171" selection-start-column="132" selection-end-line="171" selection-end-column="132" />
             </state>
           </provider>
         </entry>
@@ -42,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CRUD/batch-update/batch-update.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="6" selection-start-line="17" selection-start-column="4" selection-end-line="27" selection-end-column="6" />
+            <state relative-caret-position="255">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -133,8 +134,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2672" />
-    <option name="y" value="-11" />
+    <option name="x" value="2681" />
+    <option name="y" value="-16" />
     <option name="width" value="198" />
     <option name="height" value="56" />
   </component>
@@ -154,6 +155,41 @@
             <path>
               <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
               <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
+              <item name="batch-update" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
+              <item name="creating-record" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
+              <item name="deleting-record" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
+              <item name="updating-record" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
               <item name="Querying-the-Database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -161,6 +197,44 @@
               <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
               <item name="Querying-the-Database" type="462c0819:PsiDirectoryNode" />
               <item name="Retrieving-Single-Record" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="Relationships" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="Relationships" type="462c0819:PsiDirectoryNode" />
+              <item name="many-to-many" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="Relationships" type="462c0819:PsiDirectoryNode" />
+              <item name="one-to-many" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="Relationships" type="462c0819:PsiDirectoryNode" />
+              <item name="one-to-one" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="Relationships" type="462c0819:PsiDirectoryNode" />
+              <item name="polymorphism" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;gorm-course-pluralsight&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -257,12 +331,12 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37053087" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37053087" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,8 +402,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CRUD/batch-update/batch-update.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="6" selection-start-line="17" selection-start-column="4" selection-end-line="27" selection-end-column="6" />
+        <state relative-caret-position="255">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -375,8 +449,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="174" column="44" lean-forward="true" selection-start-line="174" selection-start-column="44" selection-end-line="174" selection-end-column="44" />
+        <state relative-caret-position="323">
+          <caret line="171" column="132" selection-start-line="171" selection-start-column="132" selection-end-line="171" selection-end-column="132" />
         </state>
       </provider>
     </entry>

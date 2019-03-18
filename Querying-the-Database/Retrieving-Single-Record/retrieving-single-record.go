@@ -106,15 +106,15 @@ func main() {
 
 	//**************************Where Clauses****************************************
 	//users := []User {}
-	////db.Debug().Where("user_name = ?", "adent").Find(&users)
-	////db.Debug().Where(&User{UserName: "adent"}).Find(&users)
-	////db.Debug().Where(map[string]interface{}{"user_name":"adent"}).Find(&users)
-	////db.Debug().Where("user_name in (?)", []string{"adent", "tmacmillan"}).Find(&users)
-	////db.Debug().Where("user_name like ?", "%mac%" ).Find(&users)
-	////db.Debug().Where("user_name like ? and first_name = ? ", "%mac%", "Tricia" ).Find(&users)
-	////db.Debug().Where("created_at < ?", time.Now()).Find(&users)
-	////db.Debug().Where("created_at BETWEEN ? and ?", time.Now().Add(-30*24*time.Hour), time.Now()).Find(&users)
-	////db.Debug().Not("user_name = ?", "adent").Find(&users)
+	//db.Debug().Where("user_name = ?", "adent").Find(&users)
+	//db.Debug().Where(&User{UserName: "adent"}).Find(&users)
+	//db.Debug().Where(map[string]interface{}{"user_name":"adent"}).Find(&users)
+	//db.Debug().Where("user_name in (?)", []string{"adent", "tmacmillan"}).Find(&users)
+	//db.Debug().Where("user_name like ?", "%mac%" ).Find(&users)
+	//db.Debug().Where("user_name like ? and first_name = ? ", "%mac%", "Tricia" ).Find(&users)
+	//db.Debug().Where("created_at < ?", time.Now()).Find(&users)
+	//db.Debug().Where("created_at BETWEEN ? and ?", time.Now().Add(-30*24*time.Hour), time.Now()).Find(&users)
+	//db.Debug().Not("user_name = ?", "adent").Find(&users)
 	//db.Debug().Where("user_name = ?", "adent").Or("user_name = ?" , "fprefect").Find(&users)
 	//for _, u := range users {
 	//	fmt.Printf("\n%v\n", u)
@@ -160,11 +160,20 @@ func main() {
 	//fmt.Printf("\n%v\n", u)
 
 	//***********************Creating Projections with Joins****************************
-	usersVMS := []UserViewModel{}
-	db.Debug().Model(&User{}).Joins("inner join calendars on calendars.user_id = users.id").Select("users.first_name, users.last_name, calendars.name").Scan(&usersVMS)
+	//usersVMS := []UserViewModel{}
+	//db.Debug().Model(&User{}).Joins("inner join calendars on calendars.user_id = users.id").Select("users.first_name, users.last_name, calendars.name").Scan(&usersVMS)
+	//
+	//for _, u := range usersVMS{
+	//	fmt.Printf("\n%v\n", u)
+	//}
 
-	for _, u := range usersVMS{
-		fmt.Printf("\n%v\n", u)
+	//*********************Creating Aggregations with Group and Having
+	//rows, _ := db.Debug().Model(&Appointment{}).Select("calendar_id, sum(length) ").Group("calendar_id").Rows()
+	rows, _ := db.Debug().Model(&Appointment{}).Select("calendar_id, sum(length) ").Group("calendar_id").Having("calendar_id = ?", 1).Rows()
+	for rows.Next() {
+		var id, length int
+		rows.Scan(&id, &length)
+		fmt.Println(id, length)
 	}
 
 }
