@@ -167,15 +167,22 @@ func main() {
 	//	fmt.Printf("\n%v\n", u)
 	//}
 
-	//*********************Creating Aggregations with Group and Having
+	//*********************Creating Aggregations with Group and Having*******************
 	//rows, _ := db.Debug().Model(&Appointment{}).Select("calendar_id, sum(length) ").Group("calendar_id").Rows()
-	rows, _ := db.Debug().Model(&Appointment{}).Select("calendar_id, sum(length) ").Group("calendar_id").Having("calendar_id = ?", 1).Rows()
-	for rows.Next() {
-		var id, length int
-		rows.Scan(&id, &length)
-		fmt.Println(id, length)
-	}
+	//rows, _ := db.Debug().Model(&Appointment{}).Select("calendar_id, sum(length) ").Group("calendar_id").Having("calendar_id = ?", 1).Rows()
+	//for rows.Next() {
+	//	var id, length int
+	//	rows.Scan(&id, &length)
+	//	fmt.Println(id, length)
+	//}
 
+	//************************************Using Raw SQL**********************************
+	users := []User{}
+	//db.Find(&users)
+	db.Debug().Exec("SELECT * FROM users").Find(&users)
+	for _, u := range users{
+		fmt.Printf("\n%v\n", u)
+	}
 }
 
 type UserViewModel struct {

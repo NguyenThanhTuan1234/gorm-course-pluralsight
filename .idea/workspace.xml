@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082af9cb-2184-4287-97cd-9f1d369eff20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go" beforeDir="false" afterPath="$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="171" column="132" selection-start-line="171" selection-start-column="132" selection-end-line="171" selection-end-column="132" />
+            <state relative-caret-position="289">
+              <caret line="181" column="39" selection-start-line="181" selection-start-column="39" selection-end-line="181" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -331,12 +330,12 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37053087" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37053087" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -449,8 +448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="171" column="132" selection-start-line="171" selection-start-column="132" selection-end-line="171" selection-end-column="132" />
+        <state relative-caret-position="289">
+          <caret line="181" column="39" selection-start-line="181" selection-start-column="39" selection-end-line="181" selection-end-column="39" />
         </state>
       </provider>
     </entry>
