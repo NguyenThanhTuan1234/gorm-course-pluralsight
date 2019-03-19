@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082af9cb-2184-4287-97cd-9f1d369eff20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Advanced-Topics/Scopes/Scopes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Advanced-Topics/Customizing-the-Logger/customizing-the-logger.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="901">
-              <caret line="58" column="23" lean-forward="true" selection-end-line="226" selection-end-column="1" />
+              <caret line="58" column="23" selection-end-line="226" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -31,20 +31,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Advanced-Topics/Scopes/Scopes.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+              <caret line="19" column="34" lean-forward="true" selection-end-line="141" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRUD/batch-update/batch-update.go">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Advanced-Topics/Customizing-the-Logger/customizing-the-logger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="238">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+              <folding>
+                <element signature="e#14#88#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,6 +136,7 @@
         <option value="$PROJECT_DIR$/Modifying Schemas/creating-new-entities.go" />
         <option value="$PROJECT_DIR$/Advanced-Topics/Callbacks/demo-callbacks.go" />
         <option value="$PROJECT_DIR$/Advanced-Topics/Scopes/Scopes.go" />
+        <option value="$PROJECT_DIR$/Advanced-Topics/Customizing-the-Logger/customizing-the-logger.go" />
       </list>
     </option>
   </component>
@@ -165,7 +169,18 @@
               <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
               <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
               <item name="Advanced-Topics" type="462c0819:PsiDirectoryNode" />
+              <item name="Customizing-the-Logger" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="Advanced-Topics" type="462c0819:PsiDirectoryNode" />
               <item name="Scopes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="Modifying Schemas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
@@ -177,6 +192,11 @@
               <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
               <item name="Querying-the-Database" type="462c0819:PsiDirectoryNode" />
               <item name="Retrieving-Single-Record" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gorm-course-pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="Relationships" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gorm-course-pluralsight" type="b2602c69:ProjectViewProjectNode" />
@@ -221,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build Scopes.go">
+  <component name="RunManager" selected="Go Build.go build customizing-the-logger.go">
     <configuration name="go build Scopes.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gorm-course-pluralsight" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -236,6 +256,15 @@
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/Modifying Schemas/creating-new-entities.go" />
+      <package value="gorm-course-pluralsight" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build customizing-the-logger.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gorm-course-pluralsight" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Advanced-Topics/Customizing-the-Logger/customizing-the-logger.go" />
       <package value="gorm-course-pluralsight" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -258,22 +287,13 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build transactions.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gorm-course-pluralsight" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/CRUD/transaction/transactions.go" />
-      <package value="gorm-course-pluralsight" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build customizing-the-logger.go" />
         <item itemvalue="Go Build.go build Scopes.go" />
         <item itemvalue="Go Build.go build demo-callbacks.go" />
         <item itemvalue="Go Build.go build creating-new-entities.go" />
         <item itemvalue="Go Build.go build retrieving-single-record.go" />
-        <item itemvalue="Go Build.go build transactions.go" />
       </list>
     </recent_temporary>
   </component>
@@ -281,12 +301,12 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41495124" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30227518" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -414,14 +434,24 @@
     <entry file="file://$PROJECT_DIR$/Querying-the-Database/Retrieving-Single-Record/retrieving-single-record.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
-          <caret line="58" column="23" lean-forward="true" selection-end-line="226" selection-end-column="1" />
+          <caret line="58" column="23" selection-end-line="226" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Advanced-Topics/Scopes/Scopes.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <caret line="19" column="34" lean-forward="true" selection-end-line="141" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Advanced-Topics/Customizing-the-Logger/customizing-the-logger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="e#14#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
