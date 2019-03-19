@@ -14,9 +14,10 @@ func main(){
 
 	//db.DropTableIfExists(&User{}, &Calendar{}, &Appointment{}, "appointment_user")
 	//db.CreateTable(&User{}, &Calendar{}, &Appointment{}, &Attachment{})
-	db.AutoMigrate(&User{}, &Calendar{}, &Appointment{}, &Attachment{})
+	db.AutoMigrate(&User{}, &Calendar{}, &Appointment{})
 	//db.Debug().Model(&User{}).ModifyColumn("first_name", "VARCHAR(100)")
-	db.Debug().Exec(`ALTER TABLE "users" ALTER "first_name" TYPE VARCHAR(100)`)
+	//db.Debug().Exec(`ALTER TABLE "users" ALTER "first_name" TYPE VARCHAR(100)`)
+	db.Debug().Model(&Appointment{}).DropColumn("recurring").DropColumn("recurrence_pattern")
 }
 
 type User struct {
